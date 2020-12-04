@@ -9,6 +9,29 @@
 
 .header {
   background: #fff;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+  &__nav a {
+    color: #d42998;
+    &:hover {
+      color: #ffa95e;
+      background: #ececec;
+    }
+  }
+  @media(min-width: 992px) {
+  &__logo {
+  max-width: 400px;
+  max-height: 200px !important;
+  z-index: 900;
+  position: relative;
+  }
+  &__container {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+}
   &__search {
     border: solid 1px #d83775;
     border-radius: 5px;
@@ -16,13 +39,10 @@
       color: #ca3366;
     }
   }
-}
-.logo {
-    z-index: 999;
-    position: relative;
-    height: 109px;
-    max-width: 304px;
-    margin-top: -46px;
+  #cabecalho {
+    background: #ececec;
+    padding: 7px;
+  }
 }
 .form-rastreio {
   background: #fff;
@@ -162,11 +182,30 @@
     margin-top: 30px;
     font-size: 0px!important;
     }
+    &__list-icon {
+      width: 21px;
+      height: 21px;
+      background-image: url(/img/uploads/dados.png);
+      background-repeat: no-repeat;
+      padding-right: 30px;
+      &.clock {
+        background-position: 0 0;
+      }
+      &.whatsapp {
+        background-position: 0 -67px;
+        & + a:before {
+          content: 'Televandas '
+        }
+      }
+      &.email {
+        background-position: 0 -115px;
+      }
+    }
 }
 .products-carousel__title {
     position: relative;
     text-align: start;
-    background: url(//cdn.ecvol.com/s/www.viabelezashop.com.br/uploads/barra-produtos.jpg) no-repeat left center;
+    background: url(/img/uploads/barra-produtos.jpg) no-repeat left center;
     height: 54px;
     padding: 13px 22px 22px 62px;
     color: #ca3366;
@@ -228,6 +267,37 @@
 .product {
   &__name {
     color: #fe4485;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 600;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 12px;
+  }
+  .prices__value {
+    font-size: 26px;
+    color: #616161;
+  }
+  .prices__value + span {
+    display: flex;
+    flex-direction: column;
+    .prices__installments {
+      order: 2;
+      font-size: 18px;
+      color: #e94e1b;
+      font-weight: 700;
+      & * {
+        font-size: 18px;
+        color: #e94e1b;
+        font-weight: 700;
+      }
+    }
+    .prices__discount {
+      order: 1
+    }
+  }
+  .prices__discount span {
+    font-size: 42px;
+    color: #e94e1b
   }
   &__buy, &__buy:hover {
    & button {
@@ -237,4 +307,66 @@
      border: none;
    }
  }
+}
+.product-card__prices {
+  display: flex !important;
+  flex-direction: column;
+  .prices__value {
+     order: 2;
+     font-size: var(--font-size);
+     &:first-child {
+         margin-top: unset;
+     }
+  }
+  .prices__compare {
+    display: none;
+  }
+  .prices__installments {
+    order: 1;
+    font-size: 17px;
+    color: #000;
+    font-weight: 700 !important;
+    & span {
+      font-size: 17px;
+      color: #000;
+      font-weight: 700;
+      &::before {
+        font-size: 17px;
+        color: #000;
+        font-weight: 700;
+        content: " de "
+      }
+    }
+  }
+}
+
+#resumo p {
+  text-align: justify;
+}
+#pages {
+  padding-left: 60px;
+}
+#footer-pay li {
+  display: flex;
+  padding-bottom: 1rem;
+}
+body, p, em, small, h1, h2, h3, h4, h5, h6, a, span {
+  font-family: 'Montserrat', sans-serif !important;
+}
+.breadcrumb {
+  border-bottom: solid 1px #3f2479;
+  padding-bottom: 10px;
+  border-radius: 0;
+  padding-right: 30px;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 12px;
+  &-item.active {
+    color: #db2364;
+  }
+}
+@media(max-width: 460px) {
+  #banner-4 .banner {
+    width: 100%;
+    padding: var(--spacer-3);
+  }
 }

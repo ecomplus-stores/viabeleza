@@ -10,6 +10,12 @@
           <div class="col-12 col-lg-7 mb-3 mb-lg-0" id="banner-2">
             <%- await include('@/sections/inc/banner', { _, opt: opt.banners[1] }) %>
           </div>
+        <% } else if(opt.banners.length === 4) { %>
+          <% for (let i = 0; i < opt.banners.length; i++) { %>
+            <div id="banner-4" class="col-12 col-lg-<%= colSize %> mb-3 mb-lg-0">
+              <%- await include('@/sections/inc/banner', { _, opt: opt.banners[i] }) %>
+            </div>
+          <% } %>
         <% } else { %>
           <% for (let i = 0; i < opt.banners.length; i++) { %>
             <div class="col-12 col-lg-<%= colSize %> mb-3 mb-lg-0">

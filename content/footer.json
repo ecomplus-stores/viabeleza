@@ -1,6 +1,6 @@
 {
   "description": {
-    "title": "",
+    "title": "Via Beleza Shop",
     "text": ""
   },
   "links_1": {
@@ -10,11 +10,11 @@
   },
   "links_2": {
     "list_categories": true,
-    "title": "Categorias",
+    "title": "Fale Conosco",
     "list": []
   },
   "contacts": {
-    "title": "Contatos",
+    "title": "Formas de Pagamento",
     "phone_wpp": true,
     "socials": true,
     "email": true,
