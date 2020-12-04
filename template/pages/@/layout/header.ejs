@@ -74,13 +74,56 @@ if (header.categories_list) {
   <div class="top-bar__nav d-none d-md-block">
     <div class="container-fluid">
       <div class="row">
-        <div class="col">
+        <% if (header.contacts_stripe.socials) { %>
+          <div class="col">
+            <% networks.forEach(network => { %>
+              <% if (contacts[network]) { %>
+                <a href="<%= contacts[network] %>" target="_blank" rel="noopener">
+                  <i class="fab fa-<%= network %>"></i>
+                </a>
+              <% } %>
+            <% }) %>
+          </div>
+        <% } %>
+        <div class="col-auto">
           <nav class="top-bar__page-links">
             <% if (header.contacts_stripe.pages) { %>
               <% header.contacts_stripe.pages.forEach(({ link, title }) => { %>
                 <a href="<%= link %>"><%= title %></a>
               <% }) %>
             <% } %>
+            <div class="ico-top-menu rastreio">
+              <a class="trigger-rastreio">
+                <span>Rastreie seu pedido</span>
+              </a>
+              <form class="form-rastreio">
+                <span>Digite o código de rastreio para acompanhar seu pedido:</span>
+                <div class="wrap">
+                  <input type="text" placeholder="Código">
+                  <button class="rastrear">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="ico-chat">
+              <div class="wrapper">
+                <div class="chat-title">Fale Conosco</div>
+                <div class="tooltip">
+                  <p class="telefone">Telefone</p>
+                  <p class="num">(61) 9 8338-5498</p>
+                  <p class="divider"></p>
+                  <p class="telefone">Whatsapp</p>
+                  <p class="num">(61) 9 8338-5498</p>
+                  <p class="divider"></p>
+                  <p class="emailt">E-mail</p>
+                  <p class="emailp">viabelezashop@gmail.com</p>
+                  <p class="divider"></p>
+                  <p class="duvidas">Dúvidas?</p>
+                  <p class="faleconoscotop"><a href="/contato">Fale conosco</a></p>
+                </div>
+              </div>
+            </div>
           </nav>
           <% if (header.contacts_stripe.phone_wpp) { %>
             <% if (contacts.whatsapp) { %>
@@ -107,17 +150,6 @@ if (header.categories_list) {
             <% } %>
           <% } %>
         </div>
-        <% if (header.contacts_stripe.socials) { %>
-          <div class="col-auto">
-            <% networks.forEach(network => { %>
-              <% if (contacts[network]) { %>
-                <a href="<%= contacts[network] %>" target="_blank" rel="noopener">
-                  <i class="fab fa-<%= network %>"></i>
-                </a>
-              <% } %>
-            <% }) %>
-          </div>
-        <% } %>
       </div>
     </div>
   </div>
