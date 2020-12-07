@@ -1,5 +1,5 @@
 {
   "css": "",
   "html_head": "",
-  "html_body": ""
+  "html_body": "<!-- Start of CartStack API Script --><script src=\"https://app.cartstack.com/br/activeAPI/load.js\" type=\"text/javascript\"></script><!-- End of CartStack API Script -->"
 }
