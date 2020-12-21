@@ -1,15 +1,18 @@
 {
   "shipping": {
     "show": true,
-    "text": "Entregamos para todo o Brasil"
+    "text": "Entregamos para todo o Brasil",
+    "link": "https://www.viabelezashop.com.br/pages/entrega"
   },
   "installments": {
     "show": true,
-    "text": "Parcele sem juros"
+    "text": "Parcele sem juros",
+    "link": "https://www.viabelezashop.com.br/pages/pagamentos"
   },
   "exchange": {
     "show": true,
-    "text": "Não gostou? A primeira troca é gratuita"
+    "text": "Não gostou? A primeira troca é gratuita",
+    "link": "https://www.viabelezashop.com.br/pages/trocas"
   },
   "promo": {
     "show": true,
