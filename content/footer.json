@@ -27,7 +27,7 @@
     }
   ],
   "payment_methods": {
-    "bb": true,
+    "bb": false,
     "visa": true,
     "boleto": true,
     "aura": false,
@@ -40,7 +40,7 @@
     "mastercard": true,
     "citibank": false,
     "mais": false,
-    "itau": true
+    "itau": false
   },
   "credits": "JD COMÉRCIO VAREJISTA DE COSMÉTICOS EIRELI - CNPJ: 10.365.767/0001-78 © 2020 Todos os direitos reservados"
 }
