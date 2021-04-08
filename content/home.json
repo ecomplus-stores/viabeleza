@@ -98,7 +98,7 @@
       "collection_id": "606f1da933554a7d2d3f15cb:collections:Destaques:/destaques",
       "title": "Produtos",
       "page": 1,
-      "sort": "offers"
+      "sort": null
     },
     {
       "type": "collection-shelf",
