@@ -104,7 +104,8 @@
       "shuffle": true,
       "collection_id": null,
       "title": "Produtos Destaques",
-      "page": 1
+      "page": 1,
+      "sort": "news"
     },
     {
       "type": "collection-shelf",
