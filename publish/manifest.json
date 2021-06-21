@@ -1,0 +1,37 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.8dd908b3b415919b408cbea4561d6119.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.a06cb99ee271c465b478ae203a3e4a64.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.5160d7b195771846dc6d14cada5b8102.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.d25eee30d8d4f7a2b4d751cc7e8131ec.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.5f3d5744635b32d7ab0876edf9a40e27.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Via Beleza Shop",
+  "short_name": "Via-Beleza-Shop",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Apresentamos soluções de saúde e beleza que tornam o seu dia-a-dia melhor e mais saudável com Qualidade e Preço Justo. Solte a Beleza Dentro de Você! Parcele em até 12x Sem Juros.",
+  "background_color": "#fff",
+  "theme_color": "#313131"
+}
